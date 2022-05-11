@@ -27,6 +27,8 @@ jobs:
       - name: Build
         run: |
           npm ci && npm run build
+        env:
+          CI: false
 
       - name: Upload build artifacts
         uses: actions/upload-artifact@master
@@ -37,44 +39,44 @@ jobs:
     needs: [Build]
     runs-on: ubuntu-latest
     steps:
-    - name: Download build artifacts
-      uses: actions/download-artifact@v3
-      with:
-        name: percept-site
-        path: build
+      - name: Download build artifacts
+        uses: actions/download-artifact@v3
+        with:
+          name: percept-site
+          path: build
 
-    - name: Deploy docs to GitHub Pages
-      uses: crazy-max/ghaction-github-pages@v2
-      with:
-        target_branch: gh-pages
-        build_dir: build
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Deploy docs to GitHub Pages
+        uses: crazy-max/ghaction-github-pages@v2
+        with:
+          target_branch: gh-pages
+          build_dir: build
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   Deploy-Firebase:
     needs: [Build]
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+      - uses: actions/checkout@v2
 
-    - name: Download build artifacts
-      uses: actions/download-artifact@v3
-      with:
-        name: percept-site
-        path: build
+      - name: Download build artifacts
+        uses: actions/download-artifact@v3
+        with:
+          name: percept-site
+          path: build
 
-    - name: Deploy to Firebase Hosting
-      uses: FirebaseExtended/action-hosting-deploy@v0
-      with:
-        repoToken: '${{ secrets.GITHUB_TOKEN }}'
-        firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_PERCEPT_E17D2 }}'
-        channelId: live
-        projectId: percept-e17d2
+      - name: Deploy to Firebase Hosting
+        uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: "${{ secrets.GITHUB_TOKEN }}"
+          firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_PERCEPT_E17D2 }}"
+          channelId: live
+          projectId: percept-e17d2
   Cleanup:
     needs: [Deploy-ghpages, Deploy-Firebase]
     if: always()
     runs-on: ubuntu-latest
     steps:
-    - name: Delete build artifacts
-      uses: geekyeggo/delete-artifact@v1
-      with:
-        name: percept-site
+      - name: Delete build artifacts
+        uses: geekyeggo/delete-artifact@v1
+        with:
+          name: percept-site
