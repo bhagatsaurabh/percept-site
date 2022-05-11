@@ -35,3 +35,9 @@ npm run build
 ## Deployment
 
 Automatic deployments to Firebase Hosting when changes are merged/pushed to main branch
+
+## License
+
+[MIT](./LICENSE) Licensed
+
+Copyright &copy; 2021-present | Saurabh Bhagat
