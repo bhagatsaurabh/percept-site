@@ -7,7 +7,7 @@ for (let i = 0; i < 20; i++) {
     "strider" + i,
     new Percept.Vector(200, 200), 4, 4,
     {
-      fill: true, fillColor: Percept.Color.Random(),
+      fill: true, fillColor: Percept.Color.Random().hexValue,
       shadowColor: "black", shadowBlur: 3,
     }
   );

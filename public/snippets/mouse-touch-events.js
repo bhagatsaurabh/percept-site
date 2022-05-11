@@ -43,7 +43,7 @@ for (let i = 0; i < 10; i++) {
     Percept.Vector.Zero(), 5, 5,
     {
       fill: true,
-      fillColor: Percept.Color.Random(),
+      fillColor: Percept.Color.Random().hexValue,
       shadowColor: "black",
       shadowBlur: 3,
     }
