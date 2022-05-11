@@ -1,4 +1,4 @@
-# Percept Site
+<h1><img height="20px" alt="Percept logo" src="./public/images/base-logo-small.png" /> &nbsp;Percept Site</h1>
 
 This repo contains source for [percept.saurabhagat.me](https://percept.saurabhagat.me).
 
