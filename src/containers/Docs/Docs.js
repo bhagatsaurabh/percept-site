@@ -27,7 +27,7 @@ const Docs = React.forwardRef((_props, ref) => {
         }}
         className={classes("docs-content docs-iframe", { active: !isLoading })}
         title="Percept Docs"
-        src="http://docs.percept.saurabhagat.me"
+        src="https://docs.percept.saurabhagat.me"
         ref={iframeRef}
       ></iframe>
       {isLoading && (
