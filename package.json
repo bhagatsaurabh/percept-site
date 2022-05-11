@@ -2,6 +2,17 @@
   "name": "percept-site",
   "version": "0.1.0",
   "private": true,
+  "description": "Website for Percept",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saurabh-prosoft/percept-site.git"
+  },
+  "keywords": [
+    "percept-site",
+    "percept site"
+  ],
+  "author": "Saurabh Bhagat",
+  "license": "MIT",
   "dependencies": {
     "@monaco-editor/react": "^4.4.4",
     "canvas-percept": "^1.0.11",
