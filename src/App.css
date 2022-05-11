@@ -1,0 +1,35 @@
+.App {
+  transition: var(--theme-transition-all);
+  background-color: var(--bg);
+  position: relative;
+}
+
+.content-body {
+  margin: auto;
+  padding: 0 1.5rem;
+  margin-top: var(--navbar-height);
+}
+
+.fade-enter {
+  opacity: 0;
+  transform: translateY(1rem);
+  z-index: 1;
+}
+
+.fade-enter-active {
+  transition: opacity .2s ease-out, transform .2s ease-out;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (min-width: 768px) {
+  .content-body {
+    max-width: 650px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .content-body {
+    max-width: 900px;
+  }
+}

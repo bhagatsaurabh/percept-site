@@ -1,0 +1,183 @@
+.playground-nav {
+  position: relative;
+  height: 3rem;
+  background-color: var(--play-nav);
+  transition: var(--theme-transition-all);
+  z-index: 3;
+  color: var(--text);
+  display: flex;
+  justify-content: space-between;
+}
+
+.playground-title {
+  line-height: 3rem;
+  font-size: 1.2rem;
+  padding: 0 1rem;
+  width: calc(100% - 2rem);
+  position: absolute;
+  text-align: center;
+}
+
+.playground-nav-item {
+  z-index: 1;
+}
+
+.playground-nav-item>button {
+  border: none;
+  line-height: 3rem;
+  padding: 0 1rem;
+  transition: background-color .05s linear;
+  background-color: transparent;
+  cursor: pointer;
+  color: var(--text);
+}
+
+.playground-nav-item>button img {
+  vertical-align: middle;
+}
+
+.playground-nav-item>button:hover {
+  background-color: var(--play-nav-item-bg);
+}
+
+.playground-nav-item>button.open {
+  background-color: var(--play-nav-item-bg);
+}
+
+.playground-nav-item span {
+  vertical-align: middle;
+}
+
+.playground-nav-item .menu {
+  position: absolute;
+  right: 0;
+  padding: 0 1.5rem;
+  box-shadow: 0 2px 5px var(--shadow);
+  background-color: var(--bg);
+  transition: var(--theme-transition-bg), transform .1s linear, opacity .1s linear;
+  overflow: auto;
+  max-height: 500px;
+  padding-bottom: 1.5rem;
+}
+
+.menu .examples-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.examples-list section {
+  width: 10rem;
+}
+
+.examples-list section ul li:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.menu h2 {
+  position: sticky;
+  top: 0;
+  margin: 0;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--text-quote);
+  background-color: var(--bg);
+  transition: var(--theme-transition-bg);
+}
+
+.menu h2 button {
+  float: right;
+  height: 1.2rem;
+}
+
+.menu h2 button img {
+  width: 1.2rem;
+  vertical-align: super;
+}
+
+.menu h3 {
+  font-weight: 500;
+  color: var(--brand-dark);
+}
+
+.menu button {
+  padding-left: 0;
+  padding-right: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: var(--text);
+  transition: var(--theme-transition-text);
+  text-align: left;
+}
+
+.menu button:hover {
+  text-decoration: underline var(--text) 2px;
+}
+
+.menu-enter {
+  opacity: 0;
+  transform: translateY(-8px);
+}
+
+.menu-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.menu-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.menu-exit-active {
+  opacity: 0;
+  transform: translateY(-8px);
+}
+
+.playground-nav-item .menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.caret-icon {
+  height: 0.8rem;
+  transition: transform .1s linear;
+}
+
+.caret-icon.open {
+  transform: rotate(180deg);
+}
+
+.restore {
+  padding-left: 0;
+  padding-right: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: var(--text);
+  transition: var(--theme-transition-text);
+  text-align: left;
+  margin-top: 1rem;
+}
+
+.restore-icon {
+  height: 1.2rem;
+  vertical-align: middle;
+  margin-right: .5rem;
+}
+
+.restore-space {
+  display: flex;
+}
+
+@media (min-width: 768px) {
+  .playground-title {
+    width: unset;
+    position: relative;
+
+    padding: 0 1rem 0 1.5rem;
+  }
+
+  .restore-space {
+    justify-content: flex-end;
+  }
+}

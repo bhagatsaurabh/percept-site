@@ -1,0 +1,33 @@
+.docs-container {
+  position: fixed;
+  width: 100vw;
+  left: 0;
+  height: calc(100vh - var(--navbar-height));
+  background-color: var(--bg);
+  transition: var(--theme-transition-bg), opacity .2s ease-out, transform .2s ease-out;
+  z-index: 1;
+}
+
+.docs-content {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.docs-iframe {
+  border: none;
+  z-index: 1;
+}
+
+.wait {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--text);
+}
+
+.async-icon {
+  width: 3rem;
+}

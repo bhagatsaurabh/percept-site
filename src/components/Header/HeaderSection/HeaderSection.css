@@ -1,0 +1,7 @@
+.header-section {
+  display: inline-block;
+  height: 100%;
+  width: min-content;
+  white-space: nowrap;
+  line-height: calc(var(--navbar-height) - 2 * var(--navbar-padding-v));
+}

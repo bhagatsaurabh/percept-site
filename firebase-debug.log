@@ -1,0 +1,115 @@
+[debug] [2022-05-11T13:19:34.344Z] ----------------------------------------------------------------------
+[debug] [2022-05-11T13:19:34.347Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Prosoft\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-05-11T13:19:34.348Z] CLI Version:   10.6.0
+[debug] [2022-05-11T13:19:34.348Z] Platform:      win32
+[debug] [2022-05-11T13:19:34.348Z] Node Version:  v16.13.2
+[debug] [2022-05-11T13:19:34.354Z] Time:          Wed May 11 2022 18:49:34 GMT+0530 (India Standard Time)
+[debug] [2022-05-11T13:19:34.355Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-05-11T13:19:34.374Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-05-11T13:19:34.374Z] > authorizing via signed-in user (saurabhbhagat98die@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\Softwares\Prosoft\Projects\Web\PerceptSite\percept-site
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-05-11T13:19:47.863Z] > refreshing access token with scopes: []
+[debug] [2022-05-11T13:19:47.864Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-05-11T13:19:48.085Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Wed, 11 May 2022 13:19:47 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-05-11T13:19:48.103Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2022-05-11T13:19:48.824Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2022-05-11T13:19:48.824Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project percept-e17d2 (percept) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2022-05-11T13:21:34.354Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2022-05-11T13:21:34.443Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2022-05-11T13:21:34.443Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"9.8.1","browserURL":"https://www.gstatic.com/firebasejs/9.8.1/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/9.8.1/firebase.tgz"},"live":{"version":"9.8","browserURL":"https://www.gstatic.com/firebasejs/live/9.8/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/9.8/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/9.8.1/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/9.8.1/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/9.8.1/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/9.8.1/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/9.8.1/firebase-auth/cordova.js","auth/react-native":"https://www.gstatic.com/firebasejs/9.8.1/firebase-auth/react-native.js","functions":"https://www.gstatic.com/firebasejs/9.8.1/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/9.8.1/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/9.8.1/firebase-firestore/lite.js","storage":"https://www.gstatic.com/firebasejs/9.8.1/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/9.8.1/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/9.8.1/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/9.8.1/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/9.8.1/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/9.8.1/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/9.8.1/firebase-firestore.memory.js"}}
+[info] i  Skipping write of build/index.html 
+[info] 
+[info] i  Detected a .git folder at D:\Softwares\Prosoft\Projects\Web\PerceptSite\percept-site 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=454532610&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2022-05-11T13:21:41.618Z] >>> HTTP REQUEST POST https://github.com/login/oauth/access_token  
+ {"client_id":"89cf50f02ac6aaed3484","client_secret":"3330d14abc895d9a74d5f17cd7a00711fa2c5bf0","code":"7755512024b7248d2b97","redirect_uri":"http://localhost:9005","state":"454532610"}
+[debug] [2022-05-11T13:21:41.929Z] <<< HTTP RESPONSE 200 {"server":"GitHub.com","date":"Wed, 11 May 2022 13:21:41 GMT","content-type":"application/json; charset=utf-8","transfer-encoding":"chunked","vary":"X-PJAX, X-PJAX-Container, Accept-Encoding, Accept, X-Requested-With","permissions-policy":"interest-cohort=()","etag":"W/\"34dee73f13b663032b03e8d75fe1c689\"","cache-control":"max-age=0, private, must-revalidate","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"0","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","expect-ct":"max-age=2592000, report-uri=\"https://api.github.com/_private/browser/errors\"","content-security-policy":"default-src 'none'; base-uri 'self'; block-all-mixed-content; child-src github.com/assets-cdn/worker/ gist.github.com/assets-cdn/worker/; connect-src 'self' uploads.github.com objects-origin.githubusercontent.com www.githubstatus.com collector.github.com raw.githubusercontent.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com cdn.optimizely.com logx.optimizely.com/v1/events translator.github.com *.actions.githubusercontent.com wss://*.actions.githubusercontent.com online.visualstudio.com/api/v1/locations github-production-repository-image-32fea6.s3.amazonaws.com github-production-release-asset-2e65be.s3.amazonaws.com insights.github.com wss://alive.github.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com objects-origin.githubusercontent.com; frame-ancestors 'none'; frame-src render.githubusercontent.com viewscreen.githubusercontent.com notebooks.githubusercontent.com; img-src 'self' data: github.githubassets.com identicons.github.com github-cloud.s3.amazonaws.com secured-user-images.githubusercontent.com/ *.githubusercontent.com; manifest-src 'self'; media-src github.com user-images.githubusercontent.com/; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; worker-src github.com/assets-cdn/worker/ gist.github.com/assets-cdn/worker/","x-github-request-id":"F38D:2086:D4335:1738F0:627BB864"}
+[debug] [2022-05-11T13:21:41.935Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2022-05-11T13:21:42.275Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2022-05-11T13:21:42.275Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"saurabh-prosoft","id":12392561,"node_id":"MDQ6VXNlcjEyMzkyNTYx","avatar_url":"https://avatars.githubusercontent.com/u/12392561?v=4","gravatar_id":"","url":"https://api.github.com/users/saurabh-prosoft","html_url":"https://github.com/saurabh-prosoft","followers_url":"https://api.github.com/users/saurabh-prosoft/followers","following_url":"https://api.github.com/users/saurabh-prosoft/following{/other_user}","gists_url":"https://api.github.com/users/saurabh-prosoft/gists{/gist_id}","starred_url":"https://api.github.com/users/saurabh-prosoft/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/saurabh-prosoft/subscriptions","organizations_url":"https://api.github.com/users/saurabh-prosoft/orgs","repos_url":"https://api.github.com/users/saurabh-prosoft/repos","events_url":"https://api.github.com/users/saurabh-prosoft/events{/privacy}","received_events_url":"https://api.github.com/users/saurabh-prosoft/received_events","type":"User","site_admin":false,"name":"Saurabh Bhagat","company":"TCS","blog":"","location":"Mumbai","email":"saurabhbhagat98die@gmail.com","hireable":null,"bio":"I drink code everyday.","twitter_username":null,"public_repos":10,"public_gists":0,"followers":5,"following":10,"created_at":"2015-05-11T09:51:20Z","updated_at":"2022-01-05T17:18:34Z","private_gists":0,"total_private_repos":0,"owned_private_repos":0,"disk_usage":75715,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as saurabh-prosoft 
+[info] 
+[debug] [2022-05-11T13:22:06.225Z] >>> [apiv2][query] GET https://api.github.com/repos/saurabh-prosoft/percept-site/actions/secrets/public-key type=owner
+[debug] [2022-05-11T13:22:06.487Z] <<< [apiv2][status] GET https://api.github.com/repos/saurabh-prosoft/percept-site/actions/secrets/public-key 404
+[debug] [2022-05-11T13:22:06.487Z] <<< [apiv2][body] GET https://api.github.com/repos/saurabh-prosoft/percept-site/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2022-05-11T13:22:08.941Z] >>> [apiv2][query] GET https://api.github.com/repos/saurabh-prosoft/percept-site/actions/secrets/public-key type=owner
+[debug] [2022-05-11T13:22:09.205Z] <<< [apiv2][status] GET https://api.github.com/repos/saurabh-prosoft/percept-site/actions/secrets/public-key 404
+[debug] [2022-05-11T13:22:09.205Z] <<< [apiv2][body] GET https://api.github.com/repos/saurabh-prosoft/percept-site/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2022-05-11T13:22:09.677Z] >>> [apiv2][query] GET https://api.github.com/repos/saurabh-prosoft/percept-site/actions/secrets/public-key type=owner
+[debug] [2022-05-11T13:22:09.944Z] <<< [apiv2][status] GET https://api.github.com/repos/saurabh-prosoft/percept-site/actions/secrets/public-key 404
+[debug] [2022-05-11T13:22:09.944Z] <<< [apiv2][body] GET https://api.github.com/repos/saurabh-prosoft/percept-site/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2022-05-11T13:22:10.270Z] >>> [apiv2][query] GET https://api.github.com/repos/saurabh-prosoft/percept-site/actions/secrets/public-key type=owner
+[debug] [2022-05-11T13:22:10.520Z] <<< [apiv2][status] GET https://api.github.com/repos/saurabh-prosoft/percept-site/actions/secrets/public-key 404
+[debug] [2022-05-11T13:22:10.521Z] <<< [apiv2][body] GET https://api.github.com/repos/saurabh-prosoft/percept-site/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2022-05-11T13:22:10.869Z] >>> [apiv2][query] GET https://api.github.com/repos/saurabh-prosoft/percept-site/actions/secrets/public-key type=owner
+[debug] [2022-05-11T13:22:11.128Z] <<< [apiv2][status] GET https://api.github.com/repos/saurabh-prosoft/percept-site/actions/secrets/public-key 404
+[debug] [2022-05-11T13:22:11.128Z] <<< [apiv2][body] GET https://api.github.com/repos/saurabh-prosoft/percept-site/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2022-05-11T13:22:13.015Z] >>> [apiv2][query] GET https://api.github.com/repos/saurabh-prosoft/percept-site/actions/secrets/public-key type=owner
+[debug] [2022-05-11T13:22:13.270Z] <<< [apiv2][status] GET https://api.github.com/repos/saurabh-prosoft/percept-site/actions/secrets/public-key 404
+[debug] [2022-05-11T13:22:13.270Z] <<< [apiv2][body] GET https://api.github.com/repos/saurabh-prosoft/percept-site/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2022-05-11T13:22:16.256Z] >>> [apiv2][query] GET https://api.github.com/repos/saurabh-prosoft/percept-site/actions/secrets/public-key type=owner
+[debug] [2022-05-11T13:22:16.510Z] <<< [apiv2][status] GET https://api.github.com/repos/saurabh-prosoft/percept-site/actions/secrets/public-key 404
+[debug] [2022-05-11T13:22:16.510Z] <<< [apiv2][body] GET https://api.github.com/repos/saurabh-prosoft/percept-site/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2022-05-11T13:22:20.788Z] >>> [apiv2][query] GET https://api.github.com/repos/saurabh-prosoft/percept-site/actions/secrets/public-key type=owner
+[debug] [2022-05-11T13:22:21.050Z] <<< [apiv2][status] GET https://api.github.com/repos/saurabh-prosoft/percept-site/actions/secrets/public-key 404
+[debug] [2022-05-11T13:22:21.050Z] <<< [apiv2][body] GET https://api.github.com/repos/saurabh-prosoft/percept-site/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2022-05-11T13:22:21.524Z] >>> [apiv2][query] GET https://api.github.com/repos/saurabh-prosoft/percept-site/actions/secrets/public-key type=owner
+[debug] [2022-05-11T13:22:21.777Z] <<< [apiv2][status] GET https://api.github.com/repos/saurabh-prosoft/percept-site/actions/secrets/public-key 404
+[debug] [2022-05-11T13:22:21.777Z] <<< [apiv2][body] GET https://api.github.com/repos/saurabh-prosoft/percept-site/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2022-05-11T13:22:25.428Z] >>> [apiv2][query] GET https://api.github.com/repos/saurabh-prosoft/percept-site/actions/secrets/public-key type=owner
+[debug] [2022-05-11T13:22:25.682Z] <<< [apiv2][status] GET https://api.github.com/repos/saurabh-prosoft/percept-site/actions/secrets/public-key 404
+[debug] [2022-05-11T13:22:25.682Z] <<< [apiv2][body] GET https://api.github.com/repos/saurabh-prosoft/percept-site/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2022-05-11T13:22:27.258Z] >>> [apiv2][query] GET https://api.github.com/repos/saurabh-prosoft/percept-site/actions/secrets/public-key type=owner
+[debug] [2022-05-11T13:22:27.508Z] <<< [apiv2][status] GET https://api.github.com/repos/saurabh-prosoft/percept-site/actions/secrets/public-key 404
+[debug] [2022-05-11T13:22:27.508Z] <<< [apiv2][body] GET https://api.github.com/repos/saurabh-prosoft/percept-site/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2022-05-11T13:22:32.317Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2022-05-11T13:22:32.559Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2022-05-11T13:22:32.560Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2022-05-11T13:22:44.406Z] >>> [apiv2][query] GET https://api.github.com/repos/saurabh-prosoft/percept-site/actions/secrets/public-key type=owner
+[debug] [2022-05-11T13:22:44.661Z] <<< [apiv2][status] GET https://api.github.com/repos/saurabh-prosoft/percept-site/actions/secrets/public-key 404
+[debug] [2022-05-11T13:22:44.661Z] <<< [apiv2][body] GET https://api.github.com/repos/saurabh-prosoft/percept-site/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2022-05-11T13:22:45.538Z] >>> [apiv2][query] GET https://api.github.com/repos/saurabh-prosoft/percept-site/actions/secrets/public-key type=owner
+[debug] [2022-05-11T13:22:45.801Z] <<< [apiv2][status] GET https://api.github.com/repos/saurabh-prosoft/percept-site/actions/secrets/public-key 404
+[debug] [2022-05-11T13:22:45.801Z] <<< [apiv2][body] GET https://api.github.com/repos/saurabh-prosoft/percept-site/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2022-05-11T13:22:46.073Z] >>> [apiv2][query] GET https://api.github.com/repos/saurabh-prosoft/percept-site/actions/secrets/public-key type=owner
+[debug] [2022-05-11T13:22:46.325Z] <<< [apiv2][status] GET https://api.github.com/repos/saurabh-prosoft/percept-site/actions/secrets/public-key 404
+[debug] [2022-05-11T13:22:46.325Z] <<< [apiv2][body] GET https://api.github.com/repos/saurabh-prosoft/percept-site/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2022-05-11T13:22:46.605Z] >>> [apiv2][query] GET https://api.github.com/repos/saurabh-prosoft/percept-site/actions/secrets/public-key type=owner
+[debug] [2022-05-11T13:22:46.859Z] <<< [apiv2][status] GET https://api.github.com/repos/saurabh-prosoft/percept-site/actions/secrets/public-key 404
+[debug] [2022-05-11T13:22:46.859Z] <<< [apiv2][body] GET https://api.github.com/repos/saurabh-prosoft/percept-site/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2022-05-11T13:22:47.435Z] >>> [apiv2][query] GET https://api.github.com/repos/saurabh-prosoft/percept-site/actions/secrets/public-key type=owner
+[debug] [2022-05-11T13:22:47.696Z] <<< [apiv2][status] GET https://api.github.com/repos/saurabh-prosoft/percept-site/actions/secrets/public-key 404
+[debug] [2022-05-11T13:22:47.696Z] <<< [apiv2][body] GET https://api.github.com/repos/saurabh-prosoft/percept-site/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}

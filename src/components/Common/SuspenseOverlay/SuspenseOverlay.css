@@ -1,0 +1,47 @@
+.suspense-overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--text);
+  background-color: var(--bg);
+  transition: var(--theme-transition-bg);
+}
+
+.async-icon {
+  width: 3rem;
+}
+
+.warn-icon {
+  vertical-align: bottom;
+  height: 1.5rem;
+}
+
+.slow-net-notification {
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  transition: opacity .12s linear;
+}
+
+.suspense-enter {
+  opacity: 0;
+}
+
+.suspense-enter-active {
+  opacity: 1;
+  transition: opacity .1s linear;
+}
+
+.suspense-exit {
+  opacity: 1;
+}
+
+.suspense-exit-active {
+  opacity: 0;
+  transition: opacity .1s linear;
+}

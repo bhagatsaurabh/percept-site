@@ -1,0 +1,45 @@
+nav {
+  display: inline-block;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+nav ul li {
+  float: left;
+  margin-right: 1rem;
+}
+
+nav ul li a {
+  transition: var(--theme-transition-text);
+  padding-bottom: .3rem;
+  position: relative;
+}
+
+nav ul li a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  background-color: var(--brand);
+  opacity: 0;
+  transition: opacity .2s linear;
+  z-index: 10;
+}
+
+nav ul li a:hover:not(.active) {
+  color: var(--brand-dark);
+}
+
+nav ul li a:hover:not(.active)::after {
+  opacity: 1;
+}
+
+nav ul li a.active::after {
+  opacity: 1;
+}

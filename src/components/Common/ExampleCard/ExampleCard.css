@@ -1,0 +1,72 @@
+.example-card {
+  position: relative;
+  max-width: 280px;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.example-card a {
+  display: block;
+}
+
+.example-card-image {
+  max-width: 280px;
+  max-height: 230px;
+}
+
+.example-card-image a {
+  width: 100%;
+  height: 100%;
+}
+
+.example-card-image a img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background-color: #000;
+}
+
+.example-card a img {
+  vertical-align: bottom;
+}
+
+.example-card::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  box-shadow: 0 0 40px -10px var(--shadow);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.example-thumbnail {
+  max-width: 100%;
+  cursor: pointer;
+}
+
+.example-name {
+  font-size: 1.2rem;
+  color: var(--text);
+  transition: var(--theme-transition-text);
+  min-height: 3.3rem;
+}
+
+.example-description {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  color: var(--text-lighter)
+}
+
+.example-actions {
+  margin-bottom: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+  align-items: flex-end;
+}

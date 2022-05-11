@@ -1,0 +1,50 @@
+.action-button {
+  transition: var(--theme-transition-all);
+  padding: .5rem 1rem;
+  font-weight: bold;
+  border-radius: 10px;
+  border: 2px solid var(--brand);
+}
+
+.action-button.small {
+  font-size: 0.9rem;
+  padding: .3rem 0.7rem;
+}
+
+.action-button.primary {
+  background-color: var(--brand);
+  color: var(--bg);
+}
+
+.action-button.primary:hover {
+  background-color: var(--brand-light);
+  color: var(--bg);
+}
+
+.action-button.secondary {
+  color: var(--brand-dark);
+}
+
+.action-button.secondary:hover {
+  background-color: var(--brand);
+  color: var(--bg);
+}
+
+.action-button.underline {
+  color: var(--brand-dark);
+  border: unset;
+  border-bottom: 2px solid transparent;
+  border-radius: unset;
+  transition: border-bottom .1s linear;
+  box-sizing: border-box;
+}
+
+.action-button.underline:hover {
+  border-bottom: 2px solid var(--brand-dark);
+}
+
+.action-button .icon {
+  height: 1rem;
+  padding-right: .5rem;
+  vertical-align: baseline;;
+}

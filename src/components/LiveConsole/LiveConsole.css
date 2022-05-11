@@ -1,0 +1,104 @@
+.live-console-container {
+  position: absolute;
+  border-top: 2px solid lightgrey;
+  bottom: 0;
+  transform: translateY(calc(100% - 1.5rem - 2px));
+  width: 100%;
+  background-color: var(--console-bg);
+  transition: var(--theme-transition-bg), transform .1s ease-out;
+  height: 14rem;
+  max-height: 100%;
+  box-sizing: border-box;
+}
+
+.live-console-container.open {
+  transform: translateY(0);
+}
+
+.live-console-container.active {
+  bottom: 0;
+}
+
+.live-console-header {
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  text-align: left;
+  cursor: pointer;
+  height: 1.5rem;
+  border-bottom: 5px solid lightgrey;
+  padding: 0;
+  line-height: 1.5rem;
+  box-sizing: content-box;
+  display: flex;
+  justify-content: space-between;
+  color: var(--text);
+}
+
+.live-console-header span {
+  display: inline-block;
+  font-size: .9rem;
+  padding-left: 0.6rem;
+}
+
+.log-counter {
+  margin-left: .6rem;
+  padding: 0 .4rem !important;
+  background-color: lightgrey;
+  font-size: .8rem !important;
+  color: #000;
+  top: -2px;
+  position: relative;
+  height: 1.6rem;
+}
+
+.log-counter.error {
+  background-color: rgb(255, 121, 121);
+  color: #fff;
+}
+
+.live-console-header img {
+  vertical-align: middle;
+}
+
+.console-caret {
+  height: .8rem;
+  transform: rotateZ(180deg);
+  margin-left: 0.6rem;
+  transition: transform .1s linear;
+}
+
+.live-console-container.open .console-caret {
+  transform: rotateZ(0);
+}
+
+.console-header-left {
+  width: min-content;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.console-header-right {
+  display: flex;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .1 linear;
+}
+
+.live-console-container.open .console-header-right {
+  pointer-events: all;
+  opacity: 1;
+}
+
+.console-filter-input {
+  margin-left: .5rem;
+  border: 1px solid grey;
+  box-shadow: 0 0 2px var(--shadow);
+  background-color: var(--input-bg);
+  color: var(--text);
+  padding: 0 .2rem;
+  max-width: 8rem;
+  box-sizing: border-box;
+  height: 1.3rem;
+  align-self: center;
+}

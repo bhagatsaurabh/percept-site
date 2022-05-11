@@ -1,0 +1,49 @@
+.home-logo {
+  max-width: 70%;
+  margin-top: 8rem;
+  margin-bottom: 3rem;
+}
+
+.home-body {
+  text-align: center;
+}
+
+.description {
+  font-weight: normal;
+  color: var(--text);
+  transition: var(--theme-transition-text);
+}
+
+.action-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 0;
+}
+
+.summary {
+  font-weight: normal;
+  color: var(--text-light);
+}
+
+.features {
+  margin-top: 4rem;
+  color: var(--text);
+}
+
+.features h2 {
+  font-weight: normal;
+  text-align: left;
+}
+
+.home-example {
+  margin: 4rem 0;
+}
+
+@media (min-width: 768px) {
+  .home-logo {
+    max-width: 350px;
+    margin-top: 6rem;
+  }
+}

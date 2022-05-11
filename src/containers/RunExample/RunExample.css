@@ -1,0 +1,16 @@
+.run-example-container {
+  margin-bottom: 4rem;
+}
+
+.run-example-container h1,
+.run-example-container pre {
+  color: var(--text);
+  transition: var(--theme-transition-text);
+  font-weight: normal;
+}
+
+.run-example-description {
+  font-family: unset;
+  font-size: 1.1rem;
+  white-space: pre-wrap;
+}

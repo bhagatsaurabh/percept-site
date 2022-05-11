@@ -1,0 +1,168 @@
+.code-live {
+  margin-left: -1.5rem !important;
+  margin-right: -1.5rem !important;
+  margin-top: 4rem;
+  box-shadow: 0 0 20px var(--shadow);
+  border-radius: .3rem;
+  background-color: #272822;
+}
+
+.code-live.split {
+  padding-bottom: 0;
+}
+
+.code-live nav {
+  overflow: hidden;
+  position: relative;
+  top: 1px;
+}
+
+.code-live nav button {
+  position: relative;
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  box-shadow: none;
+  transition: opacity .1s linear, box-shadow .1s linear;
+}
+
+.code-live nav button.active::after {
+  content: "";
+  position: absolute;
+  border-bottom: 3px solid #272822;
+  bottom: 0;
+  width: 100%;
+  left: 50%;
+  transform: translate(-50%, 1px);
+}
+
+.code-live nav button.active {
+  box-shadow: none;
+  cursor: default;
+  box-shadow: 0 15px 15px inset;
+}
+
+.code-live nav button.active img {
+  opacity: .6;
+}
+
+.code-live nav ul li {
+  margin-right: 0;
+}
+
+.tab-icon {
+  height: 1.5rem;
+  vertical-align: bottom;
+}
+
+.code-live .body {
+  height: 350px;
+  position: relative;
+}
+
+.code-live.split .body {
+  height: unset;
+}
+
+.code-live.split .body {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+}
+
+.code-live.split .body .split {
+  flex: 1;
+  min-width: 350px;
+}
+
+.code-live .body .tab {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .1s linear;
+}
+
+.code-live .body .tab.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.code-live .live-container {
+  height: 100%;
+}
+
+.code-live .code-block-container {
+  height: 100%;
+}
+
+.code-live.split .code-block-container {
+  height: 400px;
+  border: 1px solid grey;
+}
+
+.code-live.split .live-container {
+  height: 400px;
+  border: 1px solid grey;
+}
+
+.code-live .code-block {
+  height: calc(100% - 3rem);
+}
+
+.code-live .code-block {
+  margin: 0 !important;
+  box-shadow: none;
+}
+
+.code-live.split .code-block code {
+  white-space: pre !important;
+  word-break: normal !important;
+}
+
+.code-live.split .split:first-child {
+  width: 100%;
+}
+
+.code-live span.show-language {
+  right: 1.7rem;
+}
+
+.code-live .head {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgb(103, 103, 103);
+}
+
+.code-live.split .head {
+  padding: 0.5rem;
+}
+
+.code-live .head .title {
+  margin-left: 1rem;
+}
+
+@media (min-width: 768px) {
+  .code-live {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
+
+@media (min-width: 1000px) {
+  .code-live {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .code-live.split .body {
+    flex-direction: row;
+  }
+}

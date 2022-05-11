@@ -1,0 +1,53 @@
+.live-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.live-iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.live-control {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  padding: .5rem;
+  border-radius: 1rem;
+  background-color: #272822;
+  box-shadow: 0 0 20px -2px #000;
+  cursor: pointer;
+}
+
+.live-control-icon {
+  height: 1rem;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  transition: opacity .1s linear;
+  opacity: 0;
+}
+
+.live-control-icon.active {
+  opacity: 1;
+}
+
+.live-control.reload {
+  top: 3.8rem;
+}
+
+.live-control.reload img {
+  opacity: 1;
+}
+
+.resize-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+}

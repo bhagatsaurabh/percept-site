@@ -1,0 +1,35 @@
+.examples-body {
+  margin-bottom: 3rem;
+}
+
+.examples-body h2,
+.examples-body h1 {
+  font-weight: normal;
+  color: var(--text);
+  transition: var(--theme-transition-text);
+}
+
+.examples-body h2 {
+  text-align: center;
+}
+
+.examples-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.examples-body section h1 {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .examples-body h2 {
+    text-align: left;
+  }
+
+  .examples-body section h1 {
+    text-align: left;
+  }
+}

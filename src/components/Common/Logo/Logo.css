@@ -1,0 +1,12 @@
+.logo {
+  height: calc(var(--navbar-height) - 2 * var(--navbar-padding-v));
+  vertical-align: top;
+}
+
+.logo-name {
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: var(--theme-transition-all);
+  color: var(--text);
+  line-height: 1rem;
+}

@@ -1,0 +1,122 @@
+[
+  {
+    "id": 0,
+    "name": "Initialization",
+    "examples": [
+      {
+        "id": 0,
+        "name": "Setting up new Canvas",
+        "slug": "setting-up-new-canvas",
+        "description": "The Percept Canvas object binds to a <canvas> element and provides other views with access to its 2d context.\n\nIt's the main entry point for the render pipeline."
+      },
+      {
+        "id": 1,
+        "name": "Creating & Rendering Drawings",
+        "slug": "creating-and-rendering-drawings",
+        "description": "Drawings represent individual scenes, each containing its own scene-graph of Views which can be rendered on Percept.Canvas.\n\nA single View can be resued across multiple Drawings, hence can be a part of two different scene-graphs but with a single state."
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "name": "Creating Views",
+    "examples": [
+      {
+        "id": 0,
+        "name": "Drawing a line",
+        "slug": "drawing-a-line",
+        "description": "Creating and rendering a simple Line View by specifying start and end vectors."
+      },
+      {
+        "id": 1,
+        "name": "Drawing a line between views",
+        "slug": "drawing-line-between-views",
+        "description": "A Line View can be drawn directly by passing two existing Views, the Line is render based on their positions and is dynamic, if those View's position changes, the Line will update with them."
+      },
+      {
+        "id": 2,
+        "name": "Line pivot",
+        "slug": "line-pivot",
+        "description": "Any point in the Line can be a pivot, when creating a new Line View, a pivot value between 0 to 1 can be passed, for e.g. a pivot value of 0.5 will rotate the line around its midpoint.\nPivot of a line is also its position, by default pivot value is 0."
+      },
+      {
+        "id": 3,
+        "name": "Drawing shapes",
+        "slug": "drawing-shapes",
+        "description": "Different types of primitive shapes can be rendered using Views, such as Rectangles, Ellipses, Polygons...\nThe position of these shape Views are their centers.\nFor polygons, the center can be passed explicitly or Percept will auto infer by averaging its vertices."
+      },
+      {
+        "id": 4,
+        "name": "Drawing images",
+        "slug": "drawing-images",
+        "description": "An image View can be rendered by either providing a valid URL or an <img> element."
+      },
+      {
+        "id": 5,
+        "name": "Empty views",
+        "slug": "empty-views",
+        "description": "Empty views does not render anything, but it has all the common properties: position, rotation, scale and it can be a parent or child of other Views.\n\nThis is helpful in some specific cases, for e.g. if a parent needs to be scaled without scaling its child, parent both of them to an Empty View, then scale one of them.\nEmpty views can also be used for logical grouping of multiple views, without having any effect on their states."
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Updating Views",
+    "examples": [
+      {
+        "id": 0,
+        "name": "Local update",
+        "slug": "local-update",
+        "description": "A View can be updated by passing a local update function, which will be called before every render cycle."
+      },
+      {
+        "id": 1,
+        "name": "Global update",
+        "slug": "global-update",
+        "description": "While creating a Drawing, an optional function an be passed which will be called before every render cycle.\nGlobal update callback does not provide reference to Views as parameters unlike local update callbacks."
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Debugging",
+    "examples": [
+      {
+        "id": 0,
+        "name": "Debugging points",
+        "slug": "debugging-points",
+        "description": ""
+      },
+      {
+        "id": 1,
+        "name": "Debugging lines",
+        "slug": "debugging-lines",
+        "description": ""
+      },
+      {
+        "id": 2,
+        "name": "Persisting debugs",
+        "slug": "persisting-debugs",
+        "description": "Debugs are rendered every frame and gets cleared before next frame, if you need to keep the debugs rendered without clearing it, you can pass an optional parameter 'frames'.\nThis parameter defines for how many frames the debug will not be cleared."
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Listening to Events",
+    "examples": [
+      {
+        "id": 0,
+        "name": "Mouse/Touch events",
+        "slug": "mouse-touch-events",
+        "description": "Every View emits events that can be listened to, for e.g. 'enter', 'exit', 'down', 'up', 'move' and more..."
+      },
+      {
+        "id": 1,
+        "name": "Drag event",
+        "slug": "drag-event",
+        "description": ""
+      }
+    ]
+  }
+]

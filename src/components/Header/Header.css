@@ -1,0 +1,26 @@
+header {
+  width: 100%;
+  height: var(--navbar-height);
+  padding: var(--navbar-padding-v) var(--navbar-padding-h);
+  background-color: var(--bg-navbar);
+  box-sizing: border-box;
+  transition: var(--theme-transition-all), box-shadow .15s linear;
+  position: absolute;
+  top: calc(-1 * var(--navbar-height));
+  box-shadow: 0 0 20px var(--shadow);
+  z-index: 20;
+}
+
+header .left {}
+
+header .right {
+  float: right;
+  width: auto;
+}
+
+@media (min-width: 768px) {
+  header {
+    box-shadow: unset;
+    border-bottom: 1px solid rgb(190, 190, 190);
+  }
+}

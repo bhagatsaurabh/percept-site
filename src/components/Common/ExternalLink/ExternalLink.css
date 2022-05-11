@@ -1,0 +1,14 @@
+.external-link-icon {
+  color: var(--icon);
+  width: 1rem;
+  margin: 0 0.3rem;
+}
+
+html.dark .external-link-icon {
+  filter: invert(1);
+}
+
+.external-link-text {
+  color: var(--brand-dark);
+  font-weight: bold;
+}

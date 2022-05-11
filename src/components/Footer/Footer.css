@@ -1,0 +1,26 @@
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: var(--bg-lighter);
+  transition: var(--theme-transition-all);
+  color: var(--text);
+}
+
+.footer-section.left {
+  float: left;
+}
+
+.footer-section.right {
+  float: right;
+}
+
+.footer-icon {
+  height: 1.5rem;
+  transition: filter .15s linear;
+  vertical-align: bottom;
+}
+
+html.dark .footer-icon {
+  filter: invert(1);
+}
