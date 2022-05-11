@@ -39,7 +39,7 @@ const Home = React.forwardRef((_props, ref) => {
           <Code language="shell">npm i canvas-percept</Code>
           <Code language="shell">yarn add canvas-percept</Code>
           <Code language="html">
-            {`<script src="https://cdn.jsdelivr.net/npm/canvas-percept@latest/dist/percept.js"></script>`}
+            {`<script src="https://cdn.jsdelivr.net/npm/canvas-percept@1.0.17/dist/percept.js"></script>`}
           </Code>
         </CodeGroup>
       </section>
