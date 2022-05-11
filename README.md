@@ -1,70 +1,37 @@
-# Getting Started with Create React App
+# Percept Site
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This repo contains source for [percept.saurabhagat.me](https://percept.saurabhagat.me).
 
-## Available Scripts
+<br/>
 
-In the project directory, you can run:
+<p align="center">
+<a href="https://github.com/saurabh-prosoft/percept/actions/workflows/pipeline.yml">
+<img alt="GitHub Workflow Status" src="https://img.shields.io/github/workflow/status/saurabh-prosoft/percept-site/pipeline?label=Build%20%26%20Deploy&logo=data%3Aimage%2Fpng%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAABAAAAAQEAYAAABPYyMiAAAABGdBTUEAALGPC%2FxhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0QAAAAAAAD5Q7t%2FAAAACXBIWXMAAABgAAAAYADwa0LPAAAAB3RJTUUH5gULDgwR37MYugAABHJJREFUSMetlH1M1XUYxT%2FP5d6L4CzeBDKmYmLZdCAulDaQKWKKb0tJnNiaAyPLqSj3riydL3OpiGKLMdeWMNyk6SQBTZSt%2BZKhDgy7TWGKq8buvbyoTMRx7%2F09%2FVGXP2QOa50%2Fv999zzk73%2FM8wv%2BEjjzV7RocbB4J%2FYezsvgNNDsjQ0%2BAdEyZwu%2FAlchInEBTZKTkovRfuyb%2FVVANNdbmWSydXyAhXQUF2g1gt7MDiAsNHZbgGHDH6zX%2FW2F3lWrh8ujozlTUVFldrSdB18%2BYgQuwq8oyVGIaGzUX1GK1Mh8hf9q0IUS9wNePH79wAl2LVG2TxowxGoFvL1%2FWW8D3sbHcAroMw%2FQzyOjFizUORR89MlWCVj996jsBzJg8mYcIr1RU%2BPlkJXDf4RhM4I8Dqpt%2BCgqyFoA52W6nAZX64OCAEmD9rl2%2BfQBnzhD2j7AfKSiehgbtRoy7Pp%2BmITLh0iXfZOCqasBylOSkJN8yFGdzsz8RTQRpun7d5OcJdKCWtJIS3CD27dulFuG2w2EkIbBzJ2HA0vj4IdHkImzyePQBSOiIEYPnUcBeEQNECQyUHxByPZ7BDn0JxrX6enHlq7GlNj2ddYgpub6eUtARTU0DceD9JSXF%2BgFYMtvb8QJ5UVFDDBQD73o8koj61s2erQ%2BQgOkREVKIavmTJ8Zq4J7VKvmIBJ0%2BLVuBJT09fach6FJMjLgaVW0vt7UxHvhw4kTKQYo3b9Z4kOSbN00PwRfV00MliPPCBf0GeDs8%2FHlG6ACs589LPSqZVqseQ3T%2B7NlMBSJMJskFabPbI2tE9p7at0%2Fcb6lhCzhwQN8EvbtgAUGIJyQzkwkQGHHxohwC435tLQeBjWVlwxp5DuRV4POrV0cPoEGjUlPFJKYd4vUOmYIHqrpBQ0IGDkLg0s5OVgGvm83yI8ixkhIAI%2Fno0Rc2Eo5Sfe%2BeNoCRlJwcPU9MRZVut%2F96sIQdeWpsToyI6F%2BLmqebzdoBmpuT418Ymga6asMGNgGH8vPJAY1OT5eFKPO6uoYIBwErW1rM54DaWbOeFR5Ed50attaYGNdnqrbdt2%2B7R6lRaM3I8N87t6gW1qxY4SpWtS3xeFwuVZtN1T1GtfDPsrK%2FF1NCgqtb1RbqdLpHqWFrLSpynlPdkjNy5HBfY%2FIGAu01NXIe1dI9ezQSkV97e13tqrbdFRXRRSL7F1VV8THKS2vW%2BMumG8E0fuFC%2FQhkbHj4wFHw1MXG8gZoWkuL3AHJ2bZtWAO%2BKvB9OneunEEC3nc4JA7g%2BHHSgfdKS%2F2J%2BD4Bn%2BPsWXMq2t8TEaHx4MtOSeE70L0JCdZw1PLOlStai0hOeTnhwNi%2BvmENWPYgloxx43Q1GGtOntQ2gOxsCUM1bdIkXY%2FItsOHBzuVKaavFvT2mhrAFFpXx1SQrUVFJCK0JyRIFpB15MiAE7wP9%2B8fdjxc%2BaqFfTduuF5TtbXOnOkvo%2BuCGrZzzc3%2Bjjz7zp2jhs1TXOw6pWo70trqClO1FcyZM6zgM%2FgLR%2F4akSssNOQAAAAldEVYdGRhdGU6Y3JlYXRlADIwMjItMDUtMTFUMTQ6MTI6MTcrMDA6MDCkSMIXAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDIyLTA1LTExVDE0OjEyOjE3KzAwOjAw1RV6qwAAAABJRU5ErkJggg%3D%3D&style=flat-square">
+</a>
+</p>
 
-### `npm start`
+<br/>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Installation
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```shell
+git clone https://github.com/saurabh-prosoft/percept-site.git
+cd percept-site
+npm i
+```
 
-### `npm test`
+## Running locally
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```shell
+npm start
+```
 
-### `npm run build`
+## Building the site
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```shell
+npm run build
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Deployment
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Automatic deployments to Firebase Hosting when changes are merged/pushed to main branch
