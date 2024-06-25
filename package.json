@@ -5,7 +5,7 @@
   "description": "Website for Percept",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/saurabh-prosoft/percept-site.git"
+    "url": "git+https://github.com/bhagatsaurabh/percept-site.git"
   },
   "keywords": [
     "percept-site",

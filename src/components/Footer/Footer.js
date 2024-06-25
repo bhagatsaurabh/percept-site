@@ -5,7 +5,7 @@ function Footer() {
   return (
     <footer>
       <div className="footer-section left">
-        <a href="https://github.com/saurabh-prosoft/percept" target="_blank" rel="noreferrer">
+        <a href="https://github.com/bhagatsaurabh/percept" target="_blank" rel="noreferrer">
           <img className="footer-icon" src={githubIcon} alt="Star Percept GitHub repository" />
         </a>
       </div>
